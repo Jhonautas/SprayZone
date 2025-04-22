@@ -34,14 +34,18 @@
         <header class="header active">
             <div class="container">
                 <a href="#" class="logo">
-                    <img src="assets/img/favicon.ico" alt="logo tatoo" />
+                    <img src="assets/img/spray-logo.png" alt="logo tatoo" />
                 </a>
 
                 <!--Nav menu-->
                 <nav class="navbar active">
                     <ul class="navbar-list">
                         <li class="navbar-item">
-                            <a href="#" class="nav-link"> Home</a>
+                            <a href="#" class="navbar-link"> Home</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="#" class="navbar-link">Trabalhos</a>
                         </li>
 
                         <li class="navbar-item">
@@ -50,7 +54,7 @@
 
                         <!--Dropdown-->
                         <li class="dropdown-item">
-                            <div class="navbar-link">
+                            <div class="navbar-link dropdown-toggle" data-dropdown-toggle>
                                 Serviços
                                 <ion-icon
                                     name="chevron-down-outline"
@@ -68,12 +72,8 @@
                                     <a href="#" class="dropdown-link">
                                         Produção de murais e projetos artísticos
                                     </a>
+                                </li>  
 
-                                <li>
-                                    <a href="#" class="dropdown-link">
-                                        Curso básico de fotografia de arte urbana
-                                    </a>
-                                </li>
                                 <li>
                                     <a href="#" class="dropdown-link">
                                         Materiais de Arte
@@ -82,18 +82,31 @@
 
                             </ul>
                         </li>
-
-
                     </ul>
                 </nav>
 
                 <a href="#" class="btn">Login</a>
+
+                <button class="search-btn" id="searchToggle" aria-label="Buscar">
+                    <ion-icon name="search-circle-outline"></ion-icon>
+                </button>
 
                 <button class="nav-togglle-btn" aria-label="manu mobile">
                     <ion-icon name="reorder-three-outline"></ion-icon>
                 </button>
             </div>
         </header>
+
+
+        <!--Banner-->
+        <section class="banner">
+            <video autoplay muted loop>
+                <source src="assets/videos/video.graffit.mp4">
+            </video>
+        </section>
+
+
+
 
         <!--Script-->
         <script src="assets/js/script.js"></script>
