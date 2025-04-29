@@ -91,7 +91,23 @@
                     <ion-icon name="search-circle-outline"></ion-icon>
                 </button>
 
-                <button class="nav-togglle-btn" aria-label="manu mobile">
+                
+                <!-- Overlay da busca -->
+                <div class="search-overlay" id="searchOverlay">
+                <button class="close-btn" id="closeSearch" aria-label="Fechar busca">
+                <ion-icon name="close-outline"></ion-icon>
+                </button>
+                <div class="search-container">
+                <input
+                type="text"
+                placeholder="O que você está procurando?"
+                class="search-input"
+                autofocus />
+            </div>
+          </div>
+
+
+                <button class="nav-toggle-btn" aria-label="manu mobile">
                     <ion-icon name="reorder-three-outline"></ion-icon>
                 </button>
             </div>
