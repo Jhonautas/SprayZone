@@ -25,7 +25,7 @@ const closeSearch = document.getElementById('closeSearch');
 searchToggle.addEventListener('click', () => {
     searchOverlay.style.display = 'flex';
     setTimeout(() => {
-        searchOverlay.querySelector('.searc-input').focus();
+        searchOverlay.querySelector('.search-input').focus();
     }, 100);
 }); 
 
@@ -40,4 +40,22 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         searchOverlay.style.display = 'none';
     }
+})
+
+// Galeria 
+const imagens = document.querySelectorAll('.galeria img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+
+imagens.forEach((img) => {
+    img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightbox.classList.add('show');
+    })
+})
+
+// Esconder o lightbox
+lightbox.addEventListener('click', () => {
+    lightbox.classList.remove('show');
 })
