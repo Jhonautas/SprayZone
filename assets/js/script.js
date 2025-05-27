@@ -80,3 +80,13 @@ openLoginBtn.addEventListener('click', () => {
             containerLogin.classList.remove('active')
         }
      })
+
+     // Login
+     const wrapper = document.querySelector('.wrapper');
+     const registerLink = document.querySelector('.register-link');
+     const LoginLink = document.querySelector('.login-link');
+
+     registerLink.onclick = (e) => {
+        e.preventDefault();
+        wrapper.classList.add("active");
+};
